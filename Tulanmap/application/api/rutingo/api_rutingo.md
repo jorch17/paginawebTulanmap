@@ -1,0 +1,1 @@
+'/api_rutingo/?', 'application.api.rutingo.api_rutingo.Api_rutingo',

@@ -1,0 +1,43 @@
+$def with(paradas, message)
+<h3>
+        <center>
+                <a href="/paradas">Paradas</a>
+            </center>
+</h3>
+$if message != None:
+    <div class="alert alert-warning">
+        <strong>Advertencia </strong> $message
+    </div>
+<br>
+
+<form action="" method="post" enctype="multipart/form-data">
+    <input type="hidden" name="id_parada" id="id_parada" value="$paradas.id_parada" />
+
+    <div class="form-group">
+    <label for="nombre_parada">Nombre Parada</label>
+    <input readonly id="nombre_parada" type="text" class="form-control" name="nombre_parada" size="30" value="$paradas.nombre_parada"/>
+</div><div class="form-group">
+    <label for="latitud_parada">Latitud Parada</label>
+    <input readonly id="latitud_parada" type="text" class="form-control" name="latitud_parada" size="30" value="$paradas.latitud_parada"/>
+</div><div class="form-group">
+    <label for="longitud_parada">Longitud Parada</label>
+    <input readonly id="longitud_parada" type="text" class="form-control" name="longitud_parada" size="30" value="$paradas.longitud_parada"/>
+</div><div class="form-group">
+    <label for="identificador_p">Identificador</label>
+    <input readonly id="identificador_p" type="text" class="form-control" name="identificador_p" size="30" value="$paradas.identificador_p"/>
+</div><div class="form-group">
+    <label for="activo">Activo</label>
+    <input readonly id="activo" type="text" class="form-control" name="activo" size="30" value="$paradas.activo"/>
+</div><div class="form-group">
+    <label for="id_ruta">ID Ruta</label>
+    <input readonly id="id_ruta" type="text" class="form-control" name="id_ruta" size="30" value="$paradas.id_ruta"/>
+</div>
+
+    <div class="form-group">
+        <label></label>
+        <button id="send" name="send" class="form-control"><span class="glyphicon glyphicon-trash"></span> Eliminar</button>
+    </div>
+</form>
+<br>
+<br>
+<br>

@@ -1,0 +1,5 @@
+'/paradas', 'application.controllers.paradas.index.Index',
+'/paradas/view/(.+)', 'application.controllers.paradas.view.View',
+'/paradas/edit/(.+)', 'application.controllers.paradas.edit.Edit',
+'/paradas/delete/(.+)', 'application.controllers.paradas.delete.Delete',
+'/paradas/insert', 'application.controllers.paradas.insert.Insert',

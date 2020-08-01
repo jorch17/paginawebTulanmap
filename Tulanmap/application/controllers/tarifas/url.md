@@ -1,0 +1,5 @@
+'/tarifas', 'application.controllers.tarifas.index.Index',
+'/tarifas/view/(.+)', 'application.controllers.tarifas.view.View',
+'/tarifas/edit/(.+)', 'application.controllers.tarifas.edit.Edit',
+'/tarifas/delete/(.+)', 'application.controllers.tarifas.delete.Delete',
+'/tarifas/insert', 'application.controllers.tarifas.insert.Insert',

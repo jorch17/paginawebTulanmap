@@ -1,0 +1,39 @@
+<h3>
+        <center>
+                <a href="/tarifas">Tarifas</a>
+            </center>
+</h3>
+<form action="" method="post" enctype="multipart/form-data">
+
+    <div class="form-group">
+    <label for="descripcion_tarifa">Descripcion Tarifa</label>
+    <input required id="descripcion_tarifa" type="text" class="form-control" name="descripcion_tarifa" size="30"/>
+</div><div class="form-group">
+    <label for="tarifa">Tarifa</label>
+    <input required id="tarifa" type="text" class="form-control" name="tarifa" size="30"/>
+</div><div class="form-group">
+    <label for="activo">Activo</label>
+    <select  required id="activo" type="select" class="form-control" name="activo" size="1" >
+        <option value="" > Selecciona el estatus </option>
+        <option  value="1"> Activo </option>    
+        <option  value="0"> Inactivo </option>     
+    </select>
+</div><div class="form-group">
+    <label for="id_ruta">Ruta</label>
+    <select  required id="id_ruta" type="select" class="form-control" name="id_ruta" size="1" >
+        <option value="" > Selecciona una ruta </option>
+        <option  value="1"> Tulancingo-Cuautepec </option>    
+        <option  value="2"> Tulancingo-Preferida </option>    
+        <option  value="3"> Indeco Aldama </option>    
+        <option  value="4"> Felipe Angeles </option>            
+        <option  value="5"> Cuautepec-Tulancingo </option>    
+    </select>
+</div>
+
+    <div class="form-group">
+        <label></label>
+        <button id="send" name="send" class="form-control"><span class="glyphicon glyphicon-save"></span> Guardar</button>
+    </div>
+</form>
+<br>
+<br>

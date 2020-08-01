@@ -1,0 +1,5 @@
+'/rutingo', 'application.controllers.rutingo.index.Index',
+'/rutingo/view/(.+)', 'application.controllers.rutingo.view.View',
+'/rutingo/edit/(.+)', 'application.controllers.rutingo.edit.Edit',
+'/rutingo/delete/(.+)', 'application.controllers.rutingo.delete.Delete',
+'/rutingo/insert', 'application.controllers.rutingo.insert.Insert',

@@ -1,0 +1,24 @@
+$def with(tarifas)
+<h3>
+        <center>
+                <a href="/tarifas">Tarifas</a>
+            </center>
+</h3>
+<table id="datos_tabla" class="table table-hover" cellspacing="0" width="100%">
+    <thead>
+        <th>Tarifas</th>
+        <th>Editar</th>
+        <th>Eliminar</th>
+    </thead>
+    <tbody>
+        $for item in tarifas:
+        <tr>
+            
+            <td><img src="/static/files/dolar.png" width="40" height="30"><a href='/tarifas/view/$item.id_tarifa'>$item.descripcion_tarifa</a></td>
+            <td><a href='/tarifas/edit/$item.id_tarifa'><span class="glyphicon glyphicon-pencil"></span></a></td>
+            <td><a href='/tarifas/delete/$item.id_tarifa'><span class="glyphicon glyphicon-trash"></span></a></td>
+        </tr>
+    </tbody>
+</table>
+<br>
+<br>

@@ -1,0 +1,23 @@
+$def with(paradas)
+<h3>
+        <center>
+                <a href="/paradas">Paradas</a>
+            </center>
+</h3>
+<table id="datos_tabla" class="table table-hover" cellspacing="0" width="100%">
+    <thead>
+        <th>Paradas</th>
+        <th>Editar</th>
+        <th>Eliminar</th>
+    </thead>
+    <tbody>
+        $for item in paradas:
+        <tr>
+            <td><img src="/static/files/parada.png" width="40" height="30"><a href='/paradas/view/$item.id_parada'>$item.nombre_parada</a></td>
+            <td><a href='/paradas/edit/$item.id_parada'><span class="glyphicon glyphicon-pencil"></span></a></td>
+            <td><a href='/paradas/delete/$item.id_parada'><span class="glyphicon glyphicon-trash"></span></a></td>
+        </tr>
+    </tbody>
+</table>
+<br>
+<br>
