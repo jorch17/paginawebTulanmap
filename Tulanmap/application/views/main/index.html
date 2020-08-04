@@ -16,94 +16,97 @@ $var privilege: $params['privilege']
 <img src="/static/files/Logo.jpg" alt="este es el logo de Tulanmap">
 </center>
 
-<head> <title>/title> </head> <body> 
-   <ins class="adsbygoogle"
-    style="display:inline-block;width:728px;height:90px"
-    data-ad-client="ca-pub-5589388896993256"
-    data-ad-slot="5589388896993256"></ins>
-    <script>
-    (adsbygoogle = window.adsbygoogle || []).push({});
-    
-    </script>
-          <script language="JavaScript">
+<head> 
+    <title>
+
+    </title> 
+</head> 
+<html>
+    <body> 
+        <ins class="adsbygoogle"
+            style="display:inline-block;width:728px;height:90px"
+            data-ad-client="ca-pub-5589388896993256"
+            data-ad-slot="5589388896993256">
+        </ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+
+            <script language="JavaScript">
             
-            function create() {
-                this.width = ''
-                this.height = ''
-                this.src = ''
-                this.href = ''
-                this.border = ''
-                this.mouseover = ''
-            }
-            
-            
-            function random(n)  {
-                var js_mult1=3141
-                var js_mult2=5821
-                var js_m1=100000000
-                var js_m2=10000
-                var js_iseed=0
-                var js_iseed1=0
-                var js_iseed2=0
-            
-                if (js_iseed == 0)  {
-                    now = new Date()
-                    js_iseed = now.getHours() + now.getMinutes() * 60 + now.getSeconds() * 3600
+                function create() {
+                    this.width = ''
+                    this.height = ''
+                    this.src = ''
+                    this.href = ''
+                    this.border = ''
+                    this.mouseover = ''
                 }
             
-                js_iseed1 = js_iseed / js_m2
-                js_iseed2 = js_iseed % js_m2
-                var tmp = (((js_iseed2 * js_mult1 + js_iseed1 * js_mult2) % js_m2) * js_m2 + (js_iseed2 *
-            js_mult2)) % js_m1
-                js_iseed = (tmp + 1) % js_m1
-                return (Math.floor((js_iseed/js_m1) * n))
-            }
             
-            var numberOfAds = 3     //number or ads you want to display
+                function random(n)  {
+                    var js_mult1=3141
+                    var js_mult2=5821
+                    var js_m1=100000000
+                    var js_m2=10000
+                    var js_iseed=0
+                    var js_iseed1=0
+                    var js_iseed2=0
             
-            ads = new Array()
-            for(var i=1; i<=numberOfAds; i++) { ads[i] = new create() }
+                    if (js_iseed == 0)  {
+                        now = new Date()
+                        js_iseed = now.getHours() + now.getMinutes() * 60 + now.getSeconds() * 3600
+                    }
             
-            ads[1].width = "250"
-            ads[1].height = "250"
-            ads[1].src = "img src="https://uii.io/img/referral/480x60.png"
-            ads[1].href = "https://uii.io/ref/JonaVT"
-            ads[1].border = "0"
-            ads[1].mouseover = "Make short links and earn the biggest money."
+                    js_iseed1 = js_iseed / js_m2
+                    js_iseed2 = js_iseed % js_m2
+                    var tmp = (((js_iseed2 * js_mult1 + js_iseed1 * js_mult2) % js_m2) * js_m2 + (js_iseed2 * js_mult2)) % js_m1
+                        js_iseed = (tmp + 1) % js_m1
+                    return (Math.floor((js_iseed/js_m1) * n))
+                }
             
-            ads[2].width = "250"
-            ads[2].height = "250"
-            ads[2].src = "img src="https://uii.io/img/referral/480x60.png"
-            ads[2].href = "https://uii.io/ref/JonaVT "
-            ads[2].border = "0"
-            ads[2].mouseover = "Make short links and earn the biggest money."
-            
-            var n = random(numberOfAds)
-            n = (n==0) ? n+1 : n
-            n = (n > numberOfAds) ? n-numberOfAds : n
-            
-            var image = ads[n]
-            var ad = ""
-            ad += '<a href="' + image.href + '" \n'
-            ad += 'onMouseOver="self.status=\'' + image.mouseover + '\'\;return true" \n'
-            ad += 'onMouseOut="self.status=\'\'"> \n'
-            ad += '<img src="' + image.src + '" width=' + image.width
-            ad += '\n height=' + image.height + ' border=' + image.border
-            ad += '\n></a>'
-            // -- End Hiding Here -->
+                var numberOfAds = 3     //number or ads you want to display
+                
+                ads = new Array()
+                for(var i=1; i<=numberOfAds; i++) { ads[i] = new create() }
+                    
+                    ads[1].width = "250"
+                    ads[1].height = "250"
+                    ads[1].src = "img src="https://uii.io/img/referral/480x60.png"
+                    ads[1].href = "https://uii.io/ref/JonaVT"
+                    ads[1].border = "0"
+                    ads[1].mouseover = "Make short links and earn the biggest money."
+                    
+                    ads[2].width = "250"
+                    ads[2].height = "250"
+                    ads[2].src = "img src="https://uii.io/img/referral/480x60.png"
+                    ads[2].href = "https://uii.io/ref/JonaVT "
+                    ads[2].border = "0"
+                    ads[2].mouseover = "Make short links and earn the biggest money."
+                    
+                    var n = random(numberOfAds)
+                    n = (n==0) ? n+1 : n
+                    n = (n > numberOfAds) ? n-numberOfAds : n
+                    
+                    var image = ads[n]
+                    var ad = ""
+                    ad += '<a href="' + image.href + '" \n'
+                    ad += 'onMouseOver="self.status=\'' + image.mouseover + '\'\;return true" \n'
+                    ad += 'onMouseOut="self.status=\'\'"> \n'
+                    ad += '<img src="' + image.src + '" width=' + image.width
+                    ad += '\n height=' + image.height + ' border=' + image.border
+                    ad += '\n></a>'
+                    // -- End Hiding Here -->
             </script>
-            
-            
-            
-            
+
             <center>
-            <script language="JavaScript">
-                 document.write(ad)
-                // -- End Hiding Here -->
+                <script language="JavaScript">
+                    document.write(ad)
+                    // -- End Hiding Here -->
                 </script>
             </center><p>
     </body>
-    </html>
+</html>
 
 
    
