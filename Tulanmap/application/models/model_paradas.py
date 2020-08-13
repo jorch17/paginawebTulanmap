@@ -12,14 +12,14 @@ def get_all_paradas():
         print "Model get all Message {}".format(e.message)
         return None
 
-def get_rutas():
+"""def get_rutas():
     try:
         return db.select('paradas',rutas.nombre_ruta from paradas inner join rutas on paradas.id_ruta=rutas.id_ruta;)
         #CONSULTA EN MYSQL select rutas.nombre_ruta from paradas inner join rutas on paradas.id_ruta=rutas.id_ruta;
     except Exception as e:
         print "Model get all Error {}".format(e.args)
         print "Model get all Message {}".format(e.message)
-        return None
+        return None"""
 
 
 def get_paradas(id_parada):
