@@ -19,7 +19,7 @@ $def with(rutas)
          </script>
         $for item in rutas:
         <tr>
-            <td><img src="/static/files/ruta.png" width="40" height="30"><a href='/rutas/view/$item.id_ruta'>$item.nombre_ruta</a></td>
+            <td><img src="/static/files/ruta.png" width="40" height="30"><a href='/rutas/view/$item.id_ruta'>$item.id_ruta,$item.nombre_ruta</a></td>
             <td><a href='/rutas/edit/$item.id_ruta'><span class="glyphicon glyphicon-pencil"></span></a></td>
             <td><a href='/rutas/delete/$item.id_ruta'><span class="glyphicon glyphicon-trash"></span></a></td>
         </tr>
