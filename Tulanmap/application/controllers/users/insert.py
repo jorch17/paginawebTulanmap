@@ -53,6 +53,6 @@ class Insert:
             form['email'],
             form['other_data'],
             user_hash,
-            1 # always ask for change the default password
+            0 # always ask for change the default password
         )
         raise config.web.seeother('/users') # render users index.html
